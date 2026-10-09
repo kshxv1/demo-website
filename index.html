@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Verdant Home Care — Residential &amp; Commercial Cleaning</title>
+<meta name="description" content="Thoughtful residential and commercial cleaning across the Portland metro area. Regular upkeep, deep cleans, move-outs, and office schedules." />
+<meta property="og:title" content="Verdant Home Care" />
+<meta property="og:description" content="Residential and commercial cleaning across the Portland metro area." />
+<meta property="og:type" content="website" />
+<meta property="og:image" id="og-image" content="" />
+<link rel="icon" id="favicon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script src="config.js"></script>
+</head>
+<body>
+<noscript>
+  <div class="noscript-banner">
+    <strong>Verdant Home Care — Residential &amp; commercial cleaning.</strong>
+    <p>This site needs JavaScript to load its content. To reach us right now: call <a href="tel:+15550123456">+1 (555) 012-3456</a> or email <a href="mailto:hello@verdanthomecare.example">hello@verdanthomecare.example</a>.</p>
+  </div>
+</noscript>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="site-header" data-od-id="topnav">
+  <div class="container header-inner">
+    <a class="wordmark" href="#top" aria-label="Back to top">
+      <span class="wordmark-mark" aria-hidden="true"></span>
+      <span class="wordmark-text" data-bind="name">Verdant Home Care</span>
+    </a>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#why-us">Why us</a>
+      <a href="#area">Service area</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary nav-quote-btn" href="#quote">Request a quote</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Menu</span>
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<section class="hero" id="top" data-od-id="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span data-bind="tagline">Residential and commercial cleaning.</span></p>
+      <h1 id="hero-headline" data-bind-html="heroHeadline">Your home,<br />taken care of.</h1>
+      <p class="lead" id="hero-lead" data-bind="heroLead">Careful, consistent cleaning for households and small offices across the Portland metro area. Written estimates, a crew that learns your space, no upsells during the job.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#quote" data-bind-cta="primary">Request a quote</a>
+        <a class="btn btn-outline" id="hero-call" href="#" data-bind-cta="secondary">Call us now</a>
+      </div>
+      <p class="hero-area meta"><span class="pin" aria-hidden="true"></span><span data-bind="areaSummary">Serving Southeast Portland, Beaverton, Lake Oswego &amp; nearby</span></p>
+    </div>
+    <figure class="hero-media">
+      <img class="photo" id="hero-photo" alt="A cleaned living room after a regular weekly visit." loading="eager" decoding="async" />
+      <figcaption class="caption">A cleaned living room after a regular weekly visit.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band band-alt" id="services" data-od-id="services">
+  <div class="container services-layout">
+    <div class="section-head">
+      <p class="eyebrow">What we do</p>
+      <h2>Four ways we help keep things running.</h2>
+      <p class="lead">Every service is quoted before booking. If your situation doesn't fit neatly into one of these, call and describe it — chances are we've handled something similar.</p>
+    </div>
+    <ul class="service-list" id="service-list"></ul>
+  </div>
+</section>
+
+<section class="band" id="why-us" data-od-id="why-us">
+  <div class="container why-grid">
+    <div class="why-media">
+      <img class="photo photo-portrait" id="about-photo" alt="Cleaning supplies arranged on site before a visit." loading="lazy" decoding="async" />
+      <p class="caption caption-side">Supplies on site, ready to work.</p>
+    </div>
+    <div class="why-body">
+      <p class="eyebrow">Why choose us</p>
+      <h2>The honest version of what you're paying for.</h2>
+      <dl class="why-list" id="why-list"></dl>
+    </div>
+  </div>
+</section>
+
+<section class="band band-dark" id="how-it-works" data-od-id="how-it-works">
+  <div class="container how-layout">
+    <div class="how-head">
+      <p class="eyebrow eyebrow-on-dark">How it works</p>
+      <h2>Three steps, start to finish.</h2>
+    </div>
+    <ol class="steps" id="steps-list"></ol>
+  </div>
+</section>
+
+<section class="band" id="area" data-od-id="service-area">
+  <div class="container area-layout">
+    <div class="area-copy">
+      <p class="eyebrow">Service area</p>
+      <h2><span data-bind="areaHeadline">Where we work</span></h2>
+      <p class="lead"><span data-bind="areaIntro">We serve homes and small offices across the greater Portland metro area.</span></p>
+      <ul class="area-zips" id="area-zips"></ul>
+    </div>
+    <ul class="area-locations" id="area-locations"></ul>
+  </div>
+</section>
+
+<section class="band" id="testimonials" data-od-id="testimonials">
+  <div class="container testimonials-layout">
+    <div class="section-head">
+      <p class="eyebrow">From clients</p>
+      <h2>What people say after a few visits.</h2>
+      <p class="lead">Quotes shown here are from clients who agreed to be named. Add yours to <code>business.testimonials</code> in config.js — the section hides itself when the list is empty.</p>
+    </div>
+    <ul class="testimonial-list" id="testimonial-list"></ul>
+  </div>
+</section>
+
+<section class="band band-alt" id="quote" data-od-id="quote-form">
+  <div class="container quote-layout">
+    <div class="quote-intro">
+      <p class="eyebrow">Request a quote</p>
+      <h2>Tell us about your space.</h2>
+      <p class="lead">Fill this out and we'll reply within one business day with an estimate. No obligation, no sales pressure.</p>
+      <div class="quote-contact">
+        <p class="meta">Prefer to talk? Reach us directly:</p>
+        <a class="contact-line" id="quote-phone" href="#"><span class="contact-icon" aria-hidden="true"></span><span class="contact-val"></span></a>
+        <a class="contact-line" id="quote-email" href="#"><span class="contact-icon contact-mail" aria-hidden="true"></span><span class="contact-val"></span></a>
+      </div>
+    </div>
+    <form class="quote-form" id="quote-form" novalidate>
+      <div class="form-row form-two-col">
+        <div class="field">
+          <label for="q-name">Full name <span class="req">*</span></label>
+          <input class="input" id="q-name" name="name" type="text" autocomplete="name" required aria-describedby="err-q-name" />
+          <p class="err" id="err-q-name" hidden>Please enter your name.</p>
+        </div>
+        <div class="field">
+          <label for="q-phone">Phone <span class="req">*</span></label>
+          <input class="input" id="q-phone" name="phone" type="tel" autocomplete="tel" required aria-describedby="err-q-phone" />
+          <p class="err" id="err-q-phone" hidden>Please enter a phone number we can reach you at.</p>
+        </div>
+      </div>
+      <div class="form-row form-two-col">
+        <div class="field">
+          <label for="q-email">Email <span class="req">*</span></label>
+          <input class="input" id="q-email" name="email" type="email" autocomplete="email" required aria-describedby="err-q-email" />
+          <p class="err" id="err-q-email" hidden>Please enter a valid email address.</p>
+        </div>
+        <div class="field">
+          <label for="q-zip">ZIP / postal code <span class="req">*</span></label>
+          <input class="input" id="q-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" required aria-describedby="err-q-zip" />
+          <p class="err" id="err-q-zip" hidden>We need a ZIP to confirm coverage.</p>
+        </div>
+      </div>
+      <div class="form-row form-two-col">
+        <div class="field">
+          <label for="q-service">Type of cleaning <span class="req">*</span></label>
+          <select class="input" id="q-service" name="service" required aria-describedby="err-q-service">
+            <option value="">Select one…</option>
+          </select>
+          <p class="err" id="err-q-service" hidden>Please choose a service.</p>
+        </div>
+        <div class="field">
+          <label for="q-property">Property type <span class="req">*</span></label>
+          <select class="input" id="q-property" name="property" required aria-describedby="err-q-property">
+            <option value="">Select one…</option>
+            <option>House</option>
+            <option>Apartment / condo</option>
+            <option>Townhome</option>
+            <option>Office / retail</option>
+            <option>Other</option>
+          </select>
+          <p class="err" id="err-q-property" hidden>Please choose a property type.</p>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="q-date">Preferred date or timing <span class="opt">(optional)</span></label>
+          <input class="input" id="q-date" name="date" type="text" placeholder="Weekday mornings, first week of May, etc." />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="q-details">Anything else we should know? <span class="opt">(optional)</span></label>
+          <textarea class="input textarea" id="q-details" name="details" rows="4" placeholder="Pets, parking, access instructions, specific rooms or problem areas."></textarea>
+        </div>
+      </div>
+      <div class="form-foot">
+        <button class="btn btn-primary" type="submit" id="q-submit">Send request</button>
+        <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="band" id="contact" data-od-id="contact">
+  <div class="container contact-layout">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Reach a person, not a portal.</h2>
+      <p class="lead">Calls answered during business hours. Emails replied to within one business day.</p>
+    </div>
+    <dl class="contact-grid">
+      <div class="contact-item">
+        <dt>Phone</dt>
+        <dd><a class="link-strong" id="contact-phone" href="#"><span class="val"></span></a></dd>
+      </div>
+      <div class="contact-item">
+        <dt>Email</dt>
+        <dd><a class="link-strong" id="contact-email" href="#"><span class="val"></span></a></dd>
+      </div>
+      <div class="contact-item">
+        <dt>Hours</dt>
+        <dd><ul class="hours-list" id="hours-list"></ul></dd>
+      </div>
+      <div class="contact-item">
+        <dt>Service area</dt>
+        <dd><span id="contact-area"></span></dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" data-od-id="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="wordmark wordmark-sm">
+        <span class="wordmark-mark" aria-hidden="true"></span>
+        <span class="wordmark-text" data-bind="name">Verdant Home Care</span>
+      </span>
+      <p class="footer-desc" data-bind="tagline">Residential and commercial cleaning.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#services">Services</a>
+      <a href="#why-us">Why us</a>
+      <a href="#area">Service area</a>
+      <a href="#quote">Request a quote</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-meta">
+      <a id="footer-phone" href="#"><span class="val"></span></a>
+      <a id="footer-email" href="#"><span class="val"></span></a>
+      <p class="copyright">&copy; <span id="year"></span> <span data-bind="name">Verdant Home Care</span></p>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-action-bar" id="mobile-action-bar" aria-hidden="true">
+  <a class="mab-call" id="mab-phone" href="#">Call</a>
+  <a class="mab-quote btn btn-primary" href="#quote">Request a quote</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
